@@ -2,7 +2,7 @@ const express = require("express");
 var app = express();
 
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "http://localhost:3000");
+  res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Method", "GET, POST, DELETE");
   next();
 });
